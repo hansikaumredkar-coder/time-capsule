@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Birthday Time Capsule ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-decor">
+        <span class="decor">✿</span>
+        <span class="decor">♡</span>
+        <span class="decor">✧</span>
+        <span class="decor">🌷</span>
+    </div>
+
+    <!-- OPENING SCREEN -->
+
+    <section id="welcome-screen" class="screen">
+
+        <p class="eyebrow">a little gift from the past</p>
+
+        <div class="capsule-icon">
+            <div class="capsule-lid"></div>
+            <div class="capsule-box">
+                <span>♡</span>
+            </div>
+        </div>
+
+        <h1>The Birthday<br>Time Capsule</h1>
+
+        <p class="intro">
+            A little box of memories, wishes
+            and moments worth keeping forever.
+        </p>
+
+        <div class="password-card">
+
+            <label for="password">
+                This little treasure is just for you
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter the secret password"
+            >
+
+            <button id="unlock-btn">
+                Unlock your memories ♡
+            </button>
+
+            <p id="error-message"></p>
+
+        </div>
+
+        <p class="footer-note">
+            made with love, sealed with memories
+        </p>
+
+    </section>
+
+
+    <!-- TIME CAPSULE SCREEN -->
+
+    <section id="capsule-screen" class="screen hidden">
+
+        <p class="eyebrow">your memories are waiting</p>
+
+        <h1>Welcome to your<br>little time capsule</h1>
+
+        <p class="intro">
+            Every memory tells a story.
+            Ready to open yours?
+        </p>
+
+        <button id="open-capsule-btn" class="capsule-button">
+            Open the time capsule 🎁
+        </button>
+
+        <div id="capsule-content" class="hidden">
+
+            <div class="memory-card">
+                <p class="eyebrow">memory no. 01</p>
+                <h2>A little moment to remember</h2>
+                <p>
+                    Some of the best memories are made
+                    in the smallest moments.
+                </p>
+            </div>
+
+            <div class="memory-card">
+                <p class="eyebrow">memory no. 02</p>
+                <h2>A letter from the past</h2>
+                <button class="letter-btn" data-letter="past">
+                    Open your letter 💌
+                </button>
+            </div>
+
+            <div class="memory-card">
+                <p class="eyebrow">memory no. 03</p>
+                <h2>A message from the future</h2>
+                <button class="letter-btn" data-letter="future">
+                    Read your future letter ✨
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LETTER POPUP -->
+
+    <div id="letter-modal" class="modal hidden">
+
+        <div class="modal-content">
+
+            <button id="close-modal" class="close-btn">×</button>
+
+            <span class="letter-icon">💌</span>
+
+            <h2 id="letter-title"></h2>
+
+            <p id="letter-text"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
